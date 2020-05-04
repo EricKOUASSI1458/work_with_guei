@@ -1,0 +1,8 @@
+Construire un front end de e-commerce
+1) Lorsqu'on lance l'application, un formulaire nous invite à nous inscrire ou à nous loguer.
+2) Après s'etre logué, nous arrivons sur la page principale de l'application.
+	Cette page contient une side menu avec les rubriques suivantes : 
+		Accueil
+		Les différentes familles de produits
+		Mon compte
+		Déconnexion

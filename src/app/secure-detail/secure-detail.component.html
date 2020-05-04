@@ -1,0 +1,25 @@
+<app-main-menu></app-main-menu>
+
+<div class="page-header">
+    <h1 align="center">TITRE : {{title}}</h1>
+</div>
+
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="panel panel-primary">
+	        <div class="panel-heading">
+	          <h3 class="panel-title">Service title : {{secure.lib}} </h3>
+	        </div>
+	        <div class="panel-body">
+	          	<h4>Name : {{secure.lib}} </h4>
+	          	<h4>Price : {{secure.price}} </h4>
+	          	<div>
+	          	 	{{secure.detail}}
+	          	</div>
+	        </div>
+	        <button type="button" class="btn btn-sm btn-danger" (click)="goBack()" >Back</button>
+	     </div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>

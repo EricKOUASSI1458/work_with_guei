@@ -1,0 +1,24 @@
+<app-main-menu></app-main-menu>
+
+
+<div style="height: 10px;"></div>
+<div class="page-header">
+  <h1 align="center">HEALTH SERVICES</h1>
+</div>
+
+<div class="row">
+	<div class="col-sm-4"  *ngFor="let health of healths">
+		<div class="panel panel-primary">
+	        <button type="button" class="panel-heading btn btn-lg btn-primary">
+	        	<h3 class="panel-title"><a routerLink='/detailHealth/{{health.id}}'> Service title : {{health.lib}}</a> </h3>
+	        </button>
+	        <div class="panel-body">
+	          <h4>Name : {{health.lib}} </h4>
+	          <h4>Price : {{health.price}} </h4>
+	          <div>
+	          	 {{health.detail}}
+	          </div>
+	        </div>
+	     </div>
+	</div>
+</div>

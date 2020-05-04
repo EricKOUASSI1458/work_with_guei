@@ -1,0 +1,23 @@
+<app-main-menu></app-main-menu>
+
+<div style="height: 10px;"></div>
+<div class="page-header">
+  <h1 align="center">SECURE SERVICES</h1>
+</div>
+
+<div class="row">
+	<div class="col-sm-4"  *ngFor="let secure of secures">
+		<div class="panel panel-primary">
+	        <button type="button" class="panel-heading btn btn-lg btn-primary">
+	        	<h3 class="panel-title"><a routerLink='/detailSecure/{{secure.id}}'> Service title : {{secure.lib}}</a> </h3>
+	        </button>
+	        <div class="panel-body">
+	          <h4>Name : {{secure.lib}} </h4>
+	          <h4>Price : {{secure.price}} </h4>
+	          <div>
+	          	 {{secure.detail}}
+	          </div>
+	        </div>
+	     </div>
+	</div>
+</div>

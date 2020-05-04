@@ -1,0 +1,66 @@
+<app-main-menu></app-main-menu>
+
+<div style="height: 10px;"></div>
+<div class="page-header">
+  <h1 align="center">HEALTH SERVICES</h1>
+</div>
+<div class="row">
+  <div class="col-sm-4"  *ngFor="let health of healths">
+    <div class="panel panel-primary">
+          <button type="button" class="panel-heading btn btn-lg btn-primary">
+            <h3 class="panel-title"><a  routerLink='/detailHealth/{{health.id}}'> Service title : {{health.lib}}</a> </h3>
+          </button>
+          <div class="panel-body">
+            <h4>Name : {{health.lib}} </h4>
+            <h4>Price : {{health.price}} </h4>
+            <div>
+               {{health.detail}}
+            </div>
+          </div>
+       </div>
+  </div>
+</div>
+
+
+<div style="height: 20px;"></div>
+<div class="page-header">
+  <h1 align="center">EDUCATIONS SERVICES</h1>
+</div>
+<div class="row">
+  <div class="col-sm-4"  *ngFor="let education of educations">
+    <div class="panel panel-primary">
+          <button type="button" class="panel-heading btn btn-lg btn-primary">
+            <h3 class="panel-title"><a routerLink='/detailEducation/{{education.id}}'> Service title : {{education.lib}}</a> </h3>
+          </button>
+          <div class="panel-body">
+            <h4>Name : {{education.lib}} </h4>
+            <h4>Price : {{education.price}} </h4>
+            <div>
+               {{education.detail}}
+            </div>
+          </div>
+       </div>
+  </div>
+</div>
+
+
+<div style="height: 20px;"></div>
+<div class="page-header">
+  <h1 align="center">SECURES SERVICES</h1>
+</div>
+<div class="row">
+  <div class="col-sm-4"  *ngFor="let secure of secures">
+    <div class="panel panel-primary">
+          <button type="button" class="panel-heading btn btn-lg btn-primary">
+            <h3 class="panel-title"><a routerLink='/detailSecure/{{secure.id}}'> Service title : {{secure.lib}}</a> </h3>
+          </button>
+          <div class="panel-body">
+            <h4>Name : {{secure.lib}} </h4>
+            <h4>Price : {{secure.price}} </h4>
+            <div>
+               {{secure.detail}}
+            </div>
+          </div>
+       </div>
+  </div>
+</div>
